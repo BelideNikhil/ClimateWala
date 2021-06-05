@@ -90,11 +90,17 @@ footer{
 /* ---mobile */
 @media screen and (max-width:450px) {
     .search{
-        padding: 30px 0;
+        padding: 15px 0;
+    }
+    .output-data{
+        padding:15px 30px;
     }
     .output-data .container{
         display: grid;
         grid-template-columns: 1fr;
+    }
+    .output-data .container .left,.right{
+        padding:30px 20px 30px 10px;
     }
 }
 
