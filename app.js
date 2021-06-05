@@ -20,9 +20,9 @@ var max_temp=document.querySelector("#min-temp")
 var humidity=document.querySelector("#humidity")
 
 
-function farenheit(){
-    sourceURL="http://api.openweathermap.org/data/2.5/weather?q="+input.value+"&units=imperial&appid="+api
-}
+// function farenheit(){
+//     sourceURL="http://api.openweathermap.org/data/2.5/weather?q="+input.value+"&units=imperial&appid="+api
+// }
 
 function errorHandler(error) {
     console.log("error occured", error);
@@ -30,7 +30,7 @@ function errorHandler(error) {
 }
 
 check.addEventListener('click', function(){
-    var sourceURL="http://api.openweathermap.org/data/2.5/weather?q="+input.value+"&units=metric&appid="+api
+    var sourceURL="https://api.openweathermap.org/data/2.5/weather?q="+input.value+"&units=metric&appid="+api
 
     fetch(sourceURL).then(response=>response.json()).then(json=>{
     current_location.innerText=json.name;
